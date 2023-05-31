@@ -1,0 +1,636 @@
+body {
+  line-height: 1.5em;
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  height: 200vh;
+}
+
+#about {
+  background-color: #aaa;
+}
+
+#work {
+  background-color: #888;
+}
+
+#contact {
+  background-color: #666;
+}
+
+.nav-center img {
+  height: 20vh;
+}
+
+/*-------------Nav-------------*/
+#nav-wrapper {
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+
+#nav1 {
+  display: flex;
+  font-family: "Saira Semi Condensed", sans-serif;
+  height: 16vh;
+  overflow: hidden;
+  width: 100%;
+  border-bottom: 2px solid grey;
+  background-color: #ffffff;
+}
+
+.form {
+  display: flex;
+  width: 20vw;
+  height: 6vh;
+  border-radius: 10%;
+  background-color: rgba(163, 163, 163, 0.214);
+}
+
+.buscar {
+  border: hidden;
+  width: 100%;
+  padding-left: 2vw;
+  font-size: 19px;
+  background-color: rgba(163, 163, 163, 0.214);
+}
+
+#search {
+  background-color: rgba(163, 163, 163, 0.214);
+  display: flex;
+  align-items: center;
+  padding-right: 1vw;
+  padding-left: 1vw;
+  justify-content: center;
+}
+
+::placeholder {
+  color: #000000a9;
+  font-size: 19px;
+}
+
+.nav-left {
+  display: flex;
+  width: 35%;
+  padding-bottom: 1vh;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.nav-center {
+  display: flex;
+  width: 30%;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-right {
+  display: flex;
+  width: 35%;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.cesta .fa-shopping-basket {
+  font-size: 25px;
+  color: #ffffff;
+}
+
+.inicar-sesion {
+  display: flex;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 13vw;
+  height: 10vh;
+}
+
+.inicar-sesion:hover {
+  text-decoration: underline;
+  transform: translateY(1px);
+}
+
+.cesta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 5vw;
+  height: 10vh;
+  background-color: #a9c200;
+}
+
+.cesta:hover {
+  background-color: #a8c20053;
+}
+
+#nav2 {
+  display: flex;
+  width: 100%;
+  height: 7vh;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.nav-center2 {
+  display: flex;
+  width: 100%;
+  font-size: 3vh;
+  border-bottom: 1px;
+  gap: 16vw;
+  color: black;
+  align-items: center;
+  border-bottom: 2px solid grey;
+  justify-content: center;
+}
+
+.nav-link-home {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.nav-link-home:hover {
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+.nav-link-about {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.nav-link-about:hover {
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+.nav-link-contacto {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.nav-link-contacto:hover {
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+.nav-link-form {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.nav-link-form:hover {
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+.drop-down {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  width: 130px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.523);
+  z-index: 6;
+}
+
+
+.div-nav-center2-home:hover .drop-down {
+  display: block;
+  color: black;
+  text-decoration: none;
+  background-color: rgb(227, 227, 227);
+  cursor: pointer;
+  z-index: 6;
+}
+
+
+/* ************************************ */
+#nav2:hover {
+  padding-bottom: 40px;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  height: 1000px;
+  gap: 190px;
+  color: #ffffff;
+  align-items: center;
+}
+
+.wine-cards1 {
+  display: flex;
+  height: 50vh;
+  gap: 10px
+}
+
+.wine-card1 {
+  display: flex;
+  flex-direction: column;
+  width: 23vw;
+  height: 70vh;
+  background-color: #ffffff;
+}
+
+.background-img {
+  display: flex;
+  background-color: #ffffff;
+  justify-content: center;
+  align-items: flex-start;
+  height: 60vh;
+}
+
+.background-img img {
+  height: 290px;
+}
+
+.description {
+  display: flex;
+  color: #000000;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+  align-items: center;
+  height: 20vh;
+  transition-duration: .2s;
+}
+
+.description span:first-child {
+  font-family: "Times New Roman", Times, serif;
+  padding-top: 5px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.description span:nth-child(2) {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 5px;
+  font-size: 22px;
+}
+
+.add-cart {
+  display: none;
+}
+
+.wine-card1:hover .add-cart {
+  display: flex;
+  background-color: #a9c200;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px;
+}
+
+.wine-card1:hover .add-cart span {
+  color: #ffffff;
+}
+
+.wine-card1:hover .add-cart .fa-shopping-basket {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.wine-card1:hover .add-cart:hover {
+  background-color: #3e8e4172;
+  transform: translateY(1px);
+}
+
+.wine-card1:hover .add-cart:active {
+  background-color: #3e8e41;
+  transform: translateY(2px);
+}
+
+.wine-card1:hover .description {
+  padding-top: 30px;
+  background-color: rgb(227, 227, 227);
+  border-radius: 20%;
+  transform: translateY(-60px);
+}
+
+.wine-card1:hover {
+  border-radius: 5%;
+  background-color: rgb(227, 227, 227);
+}
+
+.wine-card1:hover {
+  cursor: pointer;
+}
+
+#contacto {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #494b42;
+  height: 400px;
+}
+
+#contacto div:first-child {
+  display: flex;
+  width: 30vw;
+  height: 50vh;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+#contacto div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  height: 50vh;
+  gap: 30px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+#contacto div:nth-child(2) span {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+
+#contacto div:first-child span {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 40px;
+  color: #ffffff;
+  padding-bottom: 30px;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+#contacto div:first-child p {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 40px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+  height: 10px;
+}
+
+
+#contacto div:first-child p a {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 0;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+#contacto div:first-child p a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#contacto div:first-child p:last-child:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#contacto div:last-child {
+  display: flex;
+  width: 50vw;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: #494b42;
+}
+
+#contacto div:last-child span {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  font-size: 50px;
+  margin-bottom: 20px;
+  font-weight: 400;
+  text-transform: none;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  background-color: #a8c200a4;
+}
+
+footer span:first-child {
+  font-size: 40px;
+  color: #ffffff;
+}
+
+footer span:last-child {
+  padding-left: 10px;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+
+#check {
+  display: none;
+}
+
+.checkbtn {
+  font-size: 30px;
+  margin-left: 30px;
+  line-height: 50px;
+  cursor: pointer;
+  float: right;
+  display: none;
+}
+
+@media screen and (max-width: 850px) {
+  .checkbtn {
+    display: block;
+    z-index: 6;
+  }
+
+  .buscar {
+    padding-left: 1vw;
+    font-size: 19px;
+    background-color: rgba(163, 163, 163, 0.214);
+  }
+
+  #search {
+    background-color: rgba(163, 163, 163, 0.214);
+    display: flex;
+    align-items: center;
+    padding-right: 1vw;
+    padding-left: 1vw;
+    justify-content: center;
+  }
+
+
+  ::placeholder {
+    font-size: 13px;
+  }
+
+  #nav2:hover {
+    padding-bottom: none;
+  }
+
+  #nav2 {
+    padding-bottom: 20px;
+  }
+
+  .nav-center2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    transition: all .5s;
+    position: fixed;
+    font-weight: bold;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 10vh;
+    left: -100%;
+    background-color: #9bb303ec;
+  }
+
+  #check:checked~.nav-center2 {
+    left: 0;
+  }
+
+  a:hover,
+  a.active {
+    background: none;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+  }
+
+}
+
+@media (max-width: 783px) {
+
+
+
+  .nav-right {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .wine-card1:hover .add-cart span {
+    font-size: 15px;
+  }
+
+  .wine-card1:hover .add-cart .fa-shopping-basket {
+    font-size: 15px;
+  }
+
+  .description span:first-child {
+    font-size: 19px;
+  }
+
+  .description span:nth-child(2) {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 5px;
+    font-size: 17px;
+  }
+
+}
+
+@media (max-width: 783px) {
+  .nav-center2 {
+    gap: 10vw;
+  }
+}
+
+@media (max-width: 739px) {
+  .nav-right {
+    display: flex;
+    width: 35%;
+    padding-right: 7px;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+
+  .inicar-sesion {
+    width: 17vw;
+    height: 10vh;
+  }
+
+}
+
+@media (max-width: 1000px) {
+
+  #contacto {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #contacto div {
+    display: flex;
+    width: 90px;
+    height: 50vh;
+    flex-direction: column;
+  }
+
+  #contacto span {
+    color: #0e0e0e;
+    font-size: 10px;
+  }
+
+  #contacto p {
+    color: #0e0e0e;
+    font-size: 10px;
+  }
+
+  #contacto {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #contacto div:first-child {
+    width: 50vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #contacto div:nth-child(2) {
+    width: 50vw;
+    height: 10vh;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #contacto div:nth-child(2) span {
+    font-size: 15px;
+  }
+
+  #contacto div:first-child span {
+    padding-bottom: 0px;
+    padding-left: 0px;
+    font-size: 20px;
+  }
+
+  #contacto div:first-child p {
+    padding-left: 0px;
+    font-size: 17px;
+  }
+
+
+  #contacto div:first-child p a {
+    font-size: 17px;
+  }
+
+  iframe {
+    width: 300px;
+    height: 100px;
+  }
+
+}
